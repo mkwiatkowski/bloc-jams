@@ -5,8 +5,8 @@ body {
   font-family: 'Open Sans';
   color: white;
   min-height: 100%;
-  background: -webkit-radial-gradient(#2b1339, #380c77);
-  background: radial-gradient(#2b1339, #380c77); }
+  background: -webkit-linear-gradient(#9b114c, #ba61b5);
+  background: linear-gradient(#9b114c, #ba61b5); }
 
 body.landing {
   background: #5b5579; }
