@@ -112,6 +112,18 @@ $(document).ready(function() {
   };
  
   $('.selling-points .point').hover(onHoverAction, offHoverAction);
+  
+  $('h3').hover(function(){
+    $(this).css({'color': '#55cc00'});
+  });
+  
+  $('.selling-points .point h5').click(function(){
+    $(this).css({'font-size': '28px'});
+  });
+  
+  $('.hero-content h1').click(function(){
+    $(this).fadeOut('slow');
+  });
 });
 });
 
