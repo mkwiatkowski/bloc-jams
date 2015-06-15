@@ -73,7 +73,7 @@
     }
   }
 
-  $queue-volume-display: inline-block;
+$queue-volume-display: inline-block;
 
   .queue-toggle {
     display: $queue-volume-display;
@@ -100,7 +100,6 @@
       width: 100px;
     }
   }
-}
 
 .player-bar-control-group {
   display: table-cell;
