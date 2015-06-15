@@ -7,9 +7,12 @@ html {
   height: 100%;
 }
 
+@mixin linear-gradient($first_color, $second_color) {
+  background: -webkit-linear-gradient($first_color, $second_color);
+  background: linear-gradient($first_color, $second_color);
+
 body {
-  background: linear-gradient(   #8ddca3, #55cc00);
-  background: -webkit-linear-gradient(  #8ddca3, #55cc00);
+  @include linear-gradient(#8ddca3, #55cc00);
   color: white;
   font-family: 'Open Sans';
   min-height: 100%;

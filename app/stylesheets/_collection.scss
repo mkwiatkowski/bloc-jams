@@ -4,14 +4,16 @@
 
   .caption {
     margin-top: 10px;
+    
+    $p-pa-color: rgba(255, 255, 255, 0.6);
 
     p {
-      color: rgba(255, 255, 255, 0.6);
+      color: $p-pa-color;
       font-size: 16px;
       font-weight: 300;
 
       a {
-        color: rgba(255, 255, 255, 0.6);
+        color: $p-pa-color;
       }
 
       a.album-name {

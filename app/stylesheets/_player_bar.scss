@@ -73,8 +73,10 @@
     }
   }
 
+  $queue-volume-display: inline-block;
+
   .queue-toggle {
-    display: inline-block;
+    display: $queue-volume-display;
     margin-left: 75px;
  
     i {
@@ -83,17 +85,17 @@
   }
  
   .volume {
-    display: inline-block;
+    display: $queue-volume-display;
  
     i {
-      display: inline-block;
+      display: $queue-volume-display;
       font-size: 20px;
       vertical-align: middle;
       width: 40px;
     }
 
     .seek-bar {
-      display: inline-block;
+      display: $queue-volume-display;
       vertical-align: middle;
       width: 100px;
     }
