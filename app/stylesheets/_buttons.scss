@@ -1,0 +1,21 @@
+.default-button {
+   background-color: #D2287B;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: 2px;
+   outline: none;
+   padding: 10px 20px;
+
+   &:active {
+     background-color: #9B1D64;
+     outline: none;
+   }
+ 
+   &:disabled {
+     background-color: #B3B3B3;
+     cursor: not-allowed;
+   }
+ }
