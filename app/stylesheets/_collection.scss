@@ -56,7 +56,8 @@
     height: 42px;
     width: 42px;
 
-    :hover {
+    :hover::before {
+      content: '!!!';
       background-color: #d2287b;
       color: #55cc00;
       cursor: pointer;

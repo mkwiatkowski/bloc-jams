@@ -110,7 +110,8 @@ td.song-number {
     font-size: 20px;
     height: 42px;
     width: 42px; }
-    .collection-album-container .collection-overlay-button :hover {
+    .collection-album-container .collection-overlay-button :hover::before {
+      content: '!!!';
       background-color: #d2287b;
       color: #55cc00;
       cursor: pointer; }
