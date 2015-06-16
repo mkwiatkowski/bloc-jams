@@ -236,8 +236,8 @@ html {
   height: 100%; }
 
 body {
-  background: linear-gradient(#8ddca3, #55cc00);
   background: -webkit-linear-gradient(#8ddca3, #55cc00);
+  background: linear-gradient(#8ddca3, #55cc00);
   color: white;
   font-family: 'Open Sans';
   min-height: 100%;

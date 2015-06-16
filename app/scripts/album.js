@@ -140,7 +140,7 @@ var setupSeekBars = function() {
    $seekBars.click(function(event) {
      updateSeekPercentage($(this), event);
    });
-   
+  
    $seekBars.find('.thumb').mousedown(function(event){
     var $seekBar = $(this).parent();
      
@@ -171,5 +171,8 @@ if (document.URL.match(/\/album.html/)) {
       changeAlbumView(albumMarconi);
     });
     setupSeekBars();
+    $(document).bind("mousemove", function(event) {
+      console.log(event.pageX + ", " + event.pageY);
+    });
   });
 }
