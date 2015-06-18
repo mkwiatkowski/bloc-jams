@@ -39,7 +39,7 @@ var createSongRow = function(songNumber, songName, songLength) {
      + '  <td class="col-md-9">' + songName + '</td>'
      + '  <td class="col-md-2">' + songLength + '</td>'
      + '</tr>'
-     ;
+     ;  
  
    // Instead of returning the row immediately, we'll attach hover
    // functionality to it first.
@@ -137,7 +137,7 @@ var updateSeekPercentage = function($seekBar, event) {
 var setupSeekBars = function() {
  
    $seekBars = $('.player-bar .seek-bar');
-   $seekBars.click(function(event) {
+   $seekBars.on('click', function(event) {
      updateSeekPercentage($(this), event);
    });
   
