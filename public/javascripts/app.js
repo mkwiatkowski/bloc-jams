@@ -278,6 +278,14 @@ if (document.URL.match(/\/album.html/)) {
 //require('./profile');
 
 angular.module('BlocJams', []).controller('Landing.controller', ['$scope', function($scope) {
+  
+  var shuffle = function(o) {
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+  };
+  
+  $scope.title = "Bloc Jams";
+
   $scope.subText = "Turn the music up!";
     $scope.subTextClicked = function() {
       $scope.subText += '!';
@@ -294,6 +302,11 @@ angular.module('BlocJams', []).controller('Landing.controller', ['$scope', funct
     '/images/album-placeholders/album-8.jpg',
     '/images/album-placeholders/album-9.jpg',
   ];
+
+  $scope.titleClicked = function() {
+    $scope.albumURLs = shuffle($scope.albumURLs);
+  };
+
 }]);
 });
 
