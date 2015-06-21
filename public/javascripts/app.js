@@ -287,6 +287,13 @@ blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider,
      controller: 'Landing.controller',
      templateUrl: '/templates/landing.html'
   });
+  
+  $stateProvider.state('song', {
+     url: '/song',
+     controller: 'Song.controller',
+     templateUrl: '/templates/song.html'
+  });
+  
 }]);
  
 // This is a cleaner way to call the controller than crowding it on the module definition.
@@ -320,6 +327,9 @@ blocJams.controller('Landing.controller', ['$scope', function($scope) {
     $scope.albumURLs = shuffle($scope.albumURLs);
   };
    
+}]);
+
+blocJams.controller('Song.controller', ['$scope', function($scope) {
 }]);
 });
 
