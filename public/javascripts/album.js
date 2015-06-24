@@ -4,7 +4,7 @@ var albumPicasso = {
   artist: 'Pablo Picasso',
   label: 'Cubism',
   year: '1881',
-  albumArtUrl: '/images/album-placeholder.png',
+  albumArtUrl: 'images/album-placeholder.png',
   songs: [
       { name: 'Blue', length: '4:26' },
       { name: 'Green', length: '3:14' },
@@ -20,7 +20,7 @@ var albumMarconi = {
   artist: 'Guglielmo Marconi',
   label: 'EM',
   year: '1909',
-  albumArtUrl: '/images/album-placeholder.png',
+  albumArtUrl: 'images/album-placeholder.png',
   songs: [
       { name: 'Hello, Operator?', length: '1:01' },
       { name: 'Ring, ring, ring', length: '5:01' },

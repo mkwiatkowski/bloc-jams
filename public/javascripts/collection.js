@@ -2,13 +2,13 @@ var buildAlbumThumbnail = function() {
     var template =
         '<div class="collection-album-container col-md-2">'
       + '  <div class="collection-album-image-container">'
-      + '    <img src="/images/album-placeholder.png"/>'
+      + '    <img src="images/album-placeholder.png"/>'
       + '  </div>'
       + '  <div class="caption album-collection-info">'
       + '    <p>'
-      + '      <a class="album-name" href="/album.html"> Album Name </a>'
+      + '      <a class="album-name" href="album.html"> Album Name </a>'
       + '      <br/>'
-      + '      <a href="/album.html"> Artist name </a>'
+      + '      <a href="album.html"> Artist name </a>'
       + '      <br/>'
       + '      X songs'
       + '      <br/>'
@@ -48,7 +48,7 @@ var updateCollectionView = function() {
    }
   
     var onHover = function(event) {
-      $(this).append(buildAlbumOverlay("/album.html"));
+      $(this).append(buildAlbumOverlay("album.html"));
     };
 
     var offHover = function(event) {
